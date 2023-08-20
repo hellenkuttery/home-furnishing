@@ -8,22 +8,26 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./images/background.jpg");
+  /* background-image: url("./images/background.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #efefef;
+
+
 }
 div.container {
-  width: 90%;
+  width: 80%;
   background-color: #eeecec;
   margin: 50px auto;
   font-family: "Judson", serif;
   border-radius: 1.5rem;
+  box-shadow: 2px 2px 50px black;
 }
 
 .icon-bar {
   /* width: 100%; */
-  padding: 0 10px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,19 +39,29 @@ div.container {
   display: flex;
   align-items: center;
   flex-wrap:wrap;
+  gap: 1.5rem;
 }
 .logo {
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   height: 50px;
   border-radius: 15px;
-  box-shadow: -1px 1px 2px;
+  box-shadow: -1px 1px 5px;
+  
+  
 }
 
 .input-part select {
   width: 188px;
   height: 40px;
-  background-color: #aea08d;
+  background-color: #D9D9D9;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Bellota", cursive;
+/* font-family: "Judson", serif; */
+  font-size: 1.1rem;
+  border-color: rgb(0, 0, 0, 0.1);
 }
 .search-input {
   margin-left: 20px;
@@ -57,6 +71,7 @@ div.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 5px;
 }
 .search-input input {
   border: none;
@@ -93,16 +108,22 @@ nav {
   display: flex;
   align-items: flex-end;
   flex-wrap:wrap;
+  gap: 1rem;
+  padding: 10px 50px;
 }
 .button {
-  background-color: #ffc868;
+  background-color: #D9D9D9;
   width: 309px;
   height: 40px;
   display: flex;
   align-items: center;
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   font-style: italic;
+  border-radius: 5px;
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 .button p {
   margin-left: 1rem;
@@ -110,7 +131,7 @@ nav {
 .navbar {
   margin-left: 1rem;
   margin-top:1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: rgb(0, 0, 0, 0.7);
 }
 li {
@@ -122,11 +143,13 @@ header {
   margin-top: 20px;
   /* height: 350px; */
   padding:2rem 5rem;
-  background-image: url("./images/stone.jpg");
+  background-image: url("./images/stock.jpg");
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items:center;
   flex-wrap:wrap;
+  gap: 1rem;
+
 }
 .essentials {
   background-color: #d5dee5;
@@ -134,7 +157,10 @@ header {
   height: 300px;
   display: flex;
   align-items: center;
-  margin-left: 7rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+
+  /* margin-left: 7rem; */
 }
 .Essential-text {
   padding: 20px;
@@ -148,10 +174,13 @@ header {
   height: 300px;
   background-color: #ffc868;
   margin-left: 3rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
 }
 .ligthing img {
   width: 100%;
   height: 300px;
+  border-radius: 5px;
 }
 .ligthing p {
   width: 80%;
@@ -184,6 +213,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
 }
 .part {
   width: 350px;
@@ -192,6 +222,7 @@ header {
   padding: 1rem 2px 1rem 1rem;
   border-radius: 10px;
   background-color: rgba(238, 236, 236, 0.86);
+  box-shadow: 2px 2px 50px black;
 }
 .part img {
   width: 100%;
@@ -218,12 +249,15 @@ header {
   margin: 1rem;
   background-color: #d9d9d9;
   text-align: center;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 10px;
 }
 .product img {
   width: 100%;
   height: 90%;
-
+  border-radius: 10px;
   border: 10px;
+  object-fit: cover;
 
   position: relative;
 }
@@ -266,18 +300,22 @@ span {
   border-bottom: 1px solid black;
   outline: none;
   background-color: rgba(0, 0, 0, 0);
+  padding: 0.5rem 0;
+  font-size: 1rem;
 }
+
 .formElement {
   margin: 1.5rem 1rem;
 }
 .submit {
-  background-color: #ffc868;
+  background-color: #D9D9D9;
   width: 13rem;
   height: 40px;
   display: flex;
   align-items: center;
   padding: 1rem;
   border: 1px solid black;
+  border-radius: 5px;
   font-style: italic;
   margin-left: 1rem;
 }
